@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class rough{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float a ,b ,c, d ,e , f ;
+        System.out.print("enter mks of physics:");
+        a = sc.nextFloat();
+        System.out.print("enter chemistry:");
+         b  = sc.nextFloat();
+        System.out.print("enter mks of mathematics:");
+         c  = sc.nextFloat();
+        System.out.print("enter mks of biology:");
+        d = sc.nextFloat();
+        System.out.print("enter mks of english:");
+        e= sc.nextFloat();
+        f=((a+b+c+d+e)/5);
+        float g = (f/10);
+        System.out.println("your percentage is:" + f+"%");
+        System.out.println("your CGPA is:"+ g);
+
+        if(g<4.0){
+            System.out.println("your grade is F");
+        }
+        else if(g>=4.0 && g<=4.4){
+            System.out.println("your grade is D and GRADE point is 4");
+        }
+        else if( g>=4.5 && g<=5.4){
+            System.out.println("your GRADE is C and GRADE point is 5");
+        }
+        else if(g>=5.5 && g<=6.4){
+            System.out.println("your GRADE is B and GRADE point is 6");
+        }
+        else if(g>=6.5 && g<=7.4){
+            System.out.println("your GRADE is B+ and GRADE point is 7");
+        }
+        else if (g>=7.5 && g<=8.4) {
+            System.out.println("your grade is A and GRADE point is 8");
+        }
+        else if(g>=8.5 && g<=9.4){
+            System.out.println("your GRADE is A++ and GRADE point is 9");
+        }
+        else if(g>9.4){
+            System.out.println("your GRADE is O and your GRADE point is 10");
+        }
+    }
+}
